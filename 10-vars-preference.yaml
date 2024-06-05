@@ -1,7 +1,5 @@
 - name: variables precedence
   hosts: localhost
-  vars_files:
-  - variables.yaml
   tasks:
   - name: check variables
     ansible.builtin.debug:
