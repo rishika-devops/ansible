@@ -4,7 +4,7 @@
 localhost
 
 [localhost:vars]
-NAME="sowjanya from inventory"
+PERSON="sowjanya from inventory"
 PASSWORD="GOOD MORNING"
 
 [web]
