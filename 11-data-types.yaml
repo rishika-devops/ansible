@@ -1,0 +1,27 @@
+- name: data types
+  hosts: web
+  vars:
+   NAME: sowjiii
+   skills:
+   - devops
+   - aws
+   - k8s
+   experience:
+    devops: 6
+    aws: 5
+    k8s: 3
+   trainer: true
+  tasks:
+  - name: print key value pair
+    ansible.builtin.debug:
+     msg: "name is:{{NAME}}"
+  - name: print list
+    ansible.builtin.debug:
+     msg: "skills are:{{skills}}"
+  - name: print map 
+    ansible.builtin.debug:
+     msg: "experience is:{{experience}}"
+  - name: print boolean
+    ansible.builtin.debug:
+     msg: "is he trainer:{{trainer}}"
+  

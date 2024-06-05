@@ -1,0 +1,11 @@
+- name: installing packages using loops
+  hosts: localhost
+  tasks:
+  - name: installing packages
+    ansible.builtin.package:
+     name: "{{item.name}}"
+     state: "{{item.state}}"
+    loop:
+    - {name: 'git', state: 'present'}
+    - {name: 'mysql', state: 'absent'}
+    - {name: 'net-tools', state: 'present'}
