@@ -1,5 +1,5 @@
 - name: data types
-  hosts: web
+  hosts: localhost
   vars:
    NAME: sowjiii
    skills:
