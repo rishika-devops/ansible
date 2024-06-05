@@ -1,0 +1,6 @@
+- name: declaring and printing varaiables
+  hosts: localhost
+  tasks:
+  - name: variables
+    ansible.builtin.debug:
+     msg: "hello $NAME........$WISHES"

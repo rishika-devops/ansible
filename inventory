@@ -1,5 +1,12 @@
 34.228.53.26
 
+[localhost]
+localhost
+
+[localhost:vars]
+NAME="sowjanya"
+WISHES="GOOD MORNING"
+
 [web]
 192.168.1.1
 192.167.12.11

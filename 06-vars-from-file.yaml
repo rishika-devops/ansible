@@ -1,0 +1,8 @@
+- name: declaring and printing varaiables
+  hosts: localhost
+  vars_files:
+   - variables.yaml
+  tasks:
+  - name: variables
+    ansible.builtin.debug:
+     msg: "hello $NAME........$WISHES"

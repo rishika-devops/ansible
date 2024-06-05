@@ -1,0 +1,12 @@
+- name: declaring and printing varaiables
+  hosts: localhost
+  vars:
+   NAME: "sowjanya"
+   WISHES: "good morning"
+  tasks:
+  - name: variables
+    vars:
+      NAME: "sowjanya"
+      WISHES: "good evening"
+    ansible.builtin.debug:
+     msg: "hello $NAME........$WISHES"
