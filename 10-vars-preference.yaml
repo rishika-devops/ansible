@@ -1,6 +1,6 @@
 - name: variables precedence
   hosts: localhost
-  vars_file:
+  vars_files:
   - variables.yaml
   vars_prompt:
   - name: PERSON
