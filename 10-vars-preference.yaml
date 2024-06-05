@@ -1,0 +1,22 @@
+- name: variables precedence
+  hosts: localhost
+  vars_file:
+  - variables.yaml
+  vars_prompt:
+  - name: PERSON
+    prompt: enter ur name
+    private: false
+  - name: PASSWORD
+    prompt: enter ur password
+    private: true
+  vars:
+   PERSON: "sowji from play"
+   PASSWORD: "sowji123"
+  tasks:
+  - name: check variables
+    vars:
+     PERSON: "sowji from task"
+     PASSWORD: "sowji123"
+    ansible.builtin.debug:
+     msg: "hello {{PERSON}}..........ur pwd is {{PASSWORD}}"
+
