@@ -2,9 +2,6 @@
   hosts: localhost
   vars_files:
   - variables.yaml
-  vars:
-   PERSON: "sowji from play"
-   PASSWORD: "sowji123"
   tasks:
   - name: check variables
     ansible.builtin.debug:
